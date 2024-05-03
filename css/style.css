@@ -148,20 +148,17 @@ table {
 	justify-content: center;
 	padding-left: 20px;
 }
+.cart:hover{
+	color: #f38029;
+}
 .cart-icon{
 	margin-right: 6px;
 }
 .serch-icon{
-	display: inline-block;
-	background-image: url(/svg/search.svg);
-	background-repeat: no-repeat;
-    background-size: cover;
-	width: 18px;
-	height: 18px;
 	margin-right: 6px;
 }
 .serch-icon:hover{
-	background-image: url(/svg/search_down.svg);
+
 }
 @media screen and (min-width: 1153px) {
 	.wrap{
