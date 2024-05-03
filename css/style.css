@@ -155,10 +155,16 @@ table {
 	margin-right: 6px;
 }
 .serch-icon{
+	display: inline-block;
+    background-image: url(/svg/search.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19px;
+    height: 18px;
 	margin-right: 6px;
 }
 .serch-icon:hover{
-
+	background-image: url(/svg/search_down.svg);
 }
 @media screen and (min-width: 1153px) {
 	.wrap{
@@ -185,9 +191,6 @@ table {
 	.lucky-img-flex img{
 		max-width: 70%;
 	}	
-	.lucky-img-flex{
-		
-	}
 }
 /*銷量排名*/
 .content-title{
@@ -244,6 +247,8 @@ table {
 	border: 1px solid #e4e4e4;
 	border-radius: 8px;
 	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	flex-direction: column;
 }
 .course-item-number:hover{
@@ -273,7 +278,7 @@ table {
 	width: 150px;	
 }	
 .course-item{
-	margin-bottom: 10px;
+	
 }
 .course-name{
 	color:gray;
@@ -305,7 +310,7 @@ table {
 	justify-content: space-around;
 }
 .lucky-img-flex{
-
+	padding: 10px;
 }
 .lucky-img-flex img{
 	width: 100%;
