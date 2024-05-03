@@ -259,7 +259,7 @@ table {
 	top:-14px;
 	left: -12px;
 	right:auto;
-	z-index: 2;
+	z-index: 1;
 }
 /*抖動
 .course-item-number:hover{
@@ -398,6 +398,7 @@ table {
 .pi {
 	display: block; text-align: center;
 }
+/*預覽紀錄*/
 .shoping{
 	padding-top: 30px;
 }
@@ -434,8 +435,10 @@ table {
 }
 .publicity-img{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 }
 .publicity-img img{
+	margin-top: 10px;
 	width: 370px;
 }
