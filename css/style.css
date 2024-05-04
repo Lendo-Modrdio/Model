@@ -235,7 +235,7 @@ table {
 	margin-bottom: 20px;
 }
 .course{
-	
+		
 }
 .course-item{
 	position: relative;
@@ -289,12 +289,14 @@ table {
 	border-radius:10px;
 	width: 150px;	
 }	
-.course-item{
-	
+.course-item-tag{
+	color: #808080;	
 }
 .course-name{
 	color:gray;
-	font-size: 18px;
+	line-height: 1.2;
+	font-size: 14px;
+	font-family: sans-serif;
 }
 .course-money{
 	display: flex;
@@ -303,8 +305,8 @@ table {
 	align-items: flex-end;
 }
 .course-money-left{
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 20px;
+	font-family:sans-serif;
 }
 .course-money-right{
 	margin-left: 4px;
@@ -337,7 +339,7 @@ table {
 	padding-bottom: 20px;
 }
 .product{
-
+	font-family: sans-serif;
 }
 .product-all{
 	display: flex;
@@ -366,6 +368,12 @@ table {
 .product-item-name{
 	width: 150px;
 }
+.commodity-item-name{
+	color:gray;
+	line-height: 1.2;
+	font-size: 14px;
+	font-family: sans-serif;
+}
 .product-money{
 	display: flex;
 	margin-top: 8px;
@@ -373,13 +381,15 @@ table {
 	align-items: flex-end;
 }
 .product-money-left{
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 20px;
+	font-family:sans-serif;
 }
 .product-money-right{
 	margin-left: 4px;
 	margin-bottom: 2px;
 	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: bold;
 }
 /*圖片觸碰放大縮小*/
 .pi {
