@@ -48,7 +48,10 @@ table {
 }
 /* *{
 	outline: 1px solid black;     debug 參考線*/
-
+/*手機摸式右側白邊隱藏*/
+html,body{ 
+	overflow-x: hidden;
+}
 .top-dwon{
 	margin: 0 auto;
 }
@@ -187,10 +190,25 @@ table {
 		margin-right: 20px;
 		}
 }
+@media screen and (min-width:500px){
+	.pi{
+		height: 283px; 
+}
+}
 @media screen and (max-width: 500px) {
-	.lucky-img-flex img{
-		max-width: 70%;
-	}	
+    .pi{
+		width: 100%;
+		height: 100%; 		
+	}
+	/*商品圖手機左右距離*/
+	.course{
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	.product-all-item {
+		margin-left: 11px;
+		margin-right:11px;
+}
 }
 /*銷量排名*/
 .content-title{
@@ -234,9 +252,6 @@ table {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.course{
-		
-}
 .course-item{
 	position: relative;
 	display: flex;
@@ -246,7 +261,7 @@ table {
 .course-item-number{
 	position: relative;
 	width: 150px;
-	border: 1px solid #e4e4e4;
+	border: 1px solid #ededed;
 	border-radius: 8px;
 	padding: 10px;
 	margin-top: 10px;
@@ -322,13 +337,16 @@ table {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
+	
 }
 .lucky-img-flex{
 	padding: 10px;
 }
 .lucky-img-flex img{
-	width: 100%;
-}
+	max-height: 100%;  
+    max-width: 100%; 
+    margin: auto;
+	}
 /*上下圖文*/
 
 .footer{
@@ -344,6 +362,7 @@ table {
 .product-all{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	align-content: center;
 }
 .product-all-item{
@@ -393,8 +412,8 @@ table {
 }
 /*圖片觸碰放大縮小*/
 .pi {
-	width: 500px;
-	height: 283px; 
+	width: 100%;
+
 	border-radius: 5px;
 	overflow: hidden;
 }
