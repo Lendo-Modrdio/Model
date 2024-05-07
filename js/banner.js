@@ -1,5 +1,9 @@
 const model = {
-   
+    images: [
+        "https://3yya.com/examples/assets/诸葛亮.jpg",
+        "https://3yya.com/examples/assets/进击.jpg",
+        "https://3yya.com/examples/assets/进击-大.jpg",
+    ],
     // 循环播放
     timerID: null,
     // 当前显示的图片序号

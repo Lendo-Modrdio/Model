@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function toggle() {
+          document.getElementById('nav-container').classList.toggle('is-active');
+          document.getElementById('btn-menu').classList.toggle('is-active');
+        }
+      </script>
+      
+      <style>
+        body {
+          padding: 0;
+          margin: 0;
+        }
+        .header {
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: 60px;
+          padding: 0 20px;
+          box-shadow: 0 0 3px 1px Gray;
+          background-color: White;
+          z-index: 1;
+        }
+        .btn-menu {
+          position: relative;
+          height: 15px;
+          width: 18px;
+        }
+        .btn-menu::before,
+        .btn-menu::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: DimGray;
+          transform-origin: left;
+        }
+        .btn-menu::before {
+          top: 0;
+        }
+        .btn-menu::after {
+          bottom: 0;
+        }
+        .nav-container {
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding-top: 40px;
+          background-color: rgba(0, 0, 0, .5); 
+        }
+        .nav {
+          max-height: 70%;
+          overflow: auto;
+          background-color: White;
+        }
+        .nav-item {
+          line-height: 35px;
+          padding: 0 20px;
+          border-bottom: 1px solid Gainsboro;
+        }
+        .is-active.btn-menu::before {
+          transform: rotate(45deg);
+        }
+        .is-active.btn-menu::after {
+          transform: rotate(-45deg);
+        }
+        .btn-menu::before,
+        .btn-menu::after,
+        .nav-container {
+          transition: .3s;
+        }
+        .nav {
+    transform: translateY(-100%);
+    transition: .3s;
+  }
+  .is-active .nav {
+    transform: translateY(0);
+  }
+      </style>
+</head>
+<body>
+    <div class="header">
+        <div class="btn-menu" id="btn-menu" onclick="toggle()"></div>
+      </div>
+      <div class="nav-container" id="nav-container">
+        <nav class="nav">
+          <div class="nav-item" style="color: red">紅 red</div>
+          <div class="nav-item" style="color: Orange">橘 Orange</div>
+          <div class="nav-item" style="color: Gold">黃 Yellow</div>
+          <div class="nav-item" style="color: Green">綠 Green</div>
+          <div class="nav-item" style="color: Blue">藍 Blue</div>
+          <div class="nav-item" style="color: Purple">紫 Purple</div>
+          <div class="nav-item" style="color: Pink">粉 Pink</div>
+          <div class="nav-item" style="color: Gray">灰 Gray</div>
+        </nav>
+      </div>
+</body>
+</html>
